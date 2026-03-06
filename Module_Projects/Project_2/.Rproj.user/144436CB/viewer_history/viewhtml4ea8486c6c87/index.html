@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+<script src="lib/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="lib/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="lib/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="lib/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="lib/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="lib/kePrint-0.0.1/kePrint.js"></script>
+<link href="lib/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+</head>
+<body>
+<table class="table table-hover" style="color: black; margin-left: auto; margin-right: auto;">
+<caption>Table 1. Data dictionary of variables in the California mortality tables.</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;">  </th>
+   <th style="text-align:left;">  </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr grouplength="3"><td colspan="2" style="border-bottom: 1px solid;"><strong>All Tables</strong></td></tr>
+<tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> Year </td>
+   <td style="text-align:left;"> Year of record </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> Month </td>
+   <td style="text-align:left;"> Month of record </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> County </td>
+   <td style="text-align:left;"> California county where death was recorded </td>
+  </tr>
+  <tr grouplength="2"><td colspan="2" style="border-bottom: 1px solid;"><strong>Annual Mortality Table</strong></td></tr>
+<tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> annualCount </td>
+   <td style="text-align:left;"> Number of deaths for the sex specified </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> raceEthnicity </td>
+   <td style="text-align:left;"> Race and/or Ethnicity of the deceased; Latinx is unfortunately treated as a racial category here rather than an ethnic group </td>
+  </tr>
+  <tr grouplength="9"><td colspan="2" style="border-bottom: 1px solid;"><strong>Specialized Variables</strong></td></tr>
+<tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> leadingCauseDeath </td>
+   <td style="text-align:left;"> Leading cause of death per death certificate; See separate table for encoding </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ageBins </td>
+   <td style="text-align:left;"> Age groups where the age at death was known </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ageDeaths </td>
+   <td style="text-align:left;"> Number of deaths for the age bin specified </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> biologicalSex </td>
+   <td style="text-align:left;"> Biological sex of decedent </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> sexDeaths </td>
+   <td style="text-align:left;"> Number of deaths for the sex specified </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> placeDeathOccurred </td>
+   <td style="text-align:left;"> Location of death, per death certificate </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> placeDeaths </td>
+   <td style="text-align:left;"> Number of deaths matching specified criteria </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> raceDeaths </td>
+   <td style="text-align:left;"> Number of deaths matching race / ethnic criteria </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> totalDeaths </td>
+   <td style="text-align:left;"> Number of deaths per month, year, &amp; county </td>
+  </tr>
+</tbody>
+</table> <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [["$","$"]]}})</script><script async src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>
